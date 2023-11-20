@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Tapestry&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+h1 {
+    font-family: 'Tapestry', cursive;
+    font-size: 36px;
+    color: white;
+}
+h1:hover {
+  font-family: 'Tapestry', cursive;
+  font-size: 36px;
+  color: #484082;
+}
+
+@media (min-width: 768px) {
+h1 {
+    font-family: 'Tapestry', cursive;
+    font-size: 48px;
+    color: white;
+}
+h1:hover {
+  font-family: 'Tapestry', cursive;
+  font-size: 48px;
+  color: #484082;
+}
+
+}
+
+
+
+h2 {
+  font-family: 'Tapestry', cursive;
+  font-size: 32px;
+
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight : 500;
+
+}
+
+h4{
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight : 400;
+
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  font-weight : 400;
+}
+
+.japaneseh3{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 24px;
+  font-weight : 500;
+
+}
+
+.japanesep{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 14px;
+  font-weight : 400;
+
+}
+.japaneseh4{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 10px;
+  font-weight : 400;
+
+}
+
+.tepestey{
+  font-family: 'Tapestry', cursive;
+
+}
+
+
+button.primary {
+    border-radius: 20px; 
+    color: white;
+    background-color: rgb(17 24 39);
+    width: 200px;
+    padding:8px;
+    border: 2px solid rgb(17 24 39);
+  }
+button.primary:hover {
+    border-radius: 20px; 
+    background-color: #e5e7eb;
+    color: #374151;
+    width: 200px;
+    padding:8px;
+    border: 2px solid #374151;
+
+  }
+
+button.secondry {
+    border-radius: 20px; 
+    color: rgb(17 24 39);
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    padding:8px;
+    border: 2px solid rgb(17 24 39);
+
+  }
+button.secondry:hover {
+    border-radius: 20px; 
+    background-color: #374151;
+    color: #e5e7eb;
+    width: 200px;
+    padding:8px;
+    border: 2px solid #e5e7eb;
+
+  }
+
+  
+
+.bgy{
+    background-color: #f3f2ea;
+}
+
+.purple1{
+  background-color:#534E75;
+}
+
+.purple2{
+  border-color: #534E75;
+}
+.purple3{
+  color: #484082;
+}
+
+.gradient1{
+  background: linear-gradient(rgba(255, 255, 255, 1),rgb(255, 255, 255, 0));
+}
+
+.snip1217 {
+  text-align: center;
+}
+.snip1217 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1217 li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0.5em 1.5em;
+  padding: 0;
+}
+.snip1217  {
+  padding: 0.3em 0;
+  color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+.snip1217 :before,
+.snip1217 :after {
+  height: 3px;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  background-color: #484082;
+  width: 0;
+}
+.snip1217 :before {
+  top: 0;
+  left: 0;
+}
+.snip1217 :after {
+  bottom: 0;
+  right: 0;
+}
+.snip1217 :hover,
+.snip1217 .current  {
+  color: #484082;
+}
+.snip1217 :hover:before,
+.snip1217 .current a:before,
+.snip1217 :hover:after,
+.snip1217 .current :after {
+  width: 100%;
+}
+
+.Headline{
+  animation: SlideIn 1.6s;
+}
+
+/* CSSアニメーションの設定 */
+@keyframes SlideIn {
+  0% {
+    opacity: 0;/*初期状態では透明に*/
+    transform: translateX(64px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.herocover{
+  object-fit: cover;
+  min-width: 100vw;
+  min-height: 100vh;
+  max-height: 100vh;
+  
+}
+
+
+.target:hover {
+  transition: .5s ;
+  transform: rotateZ( 360deg ) ;
+}
+
+span {
+  text-decoration: underline;
+}
+
+span:hover{
+  color: #484082;
+  font-weight : 500;
+}
